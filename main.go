@@ -3,19 +3,14 @@ package main
 import "fmt"
 
 func main(){
-	a, b :=10, 3
-	fmt.Println("a soma é:", a + b)
-	fmt.Println("a divisão é:", a / b)
-	fmt.println("a mutiplicação é:", a * b)
-	fmt.println("o resto da divisão: ", a % b)
+  var 1 numero , 2 numero
+	fmt.println("digite um numer para o 1 numero:", 1 numero)
+	fmt.println("digit um numero para o 2 nnumero:", 2 numero)
+    fmt.println("a soma é:", 1 numero + 2 nuimero)
+	fmt.Println("a subitrasão é:", 1 numero / 2 numero)
+	fmt.println("a mutiplicação é:" 1 numero * 2 numero)
+	fmt.println("a diviçao é:", 1 numero % 2 numero)
 
-
-    a+=1
-	fmt.println("incrementar a", a)
-
-	if a > 0 && b > 0 {
-		fmt.println("numeros podetivos")
-	}
 
 	}
 
