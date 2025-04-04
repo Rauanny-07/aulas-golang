@@ -1,36 +1,36 @@
 package main
-
-import "fmt"
+   "fmt"
+   "strings"
+   "sort"
 
 func main(){
-    var username string 
+    greeting := "hello my frinds!"
+	fmt.Println(strings.Contains(greeting,"dogs")) 
+	fmt.Println(strings.ReplaceAll(greeting,"my", "mine")) 
+	fmt.Println(strings.ToUpper(greeting)) 
+	fmt.Println(strings.Index(greeting,"my")) 
+	fmt.Println(strings.Split(greeting,"")) 
+	ages:= []int{50,80,10} 
+	sort.Ints(ages) 
+	fmt.Println(ages) 
+	Index:= sort.SearchInts(ages,50)  
+    fmt.Println(index) 
+    names :=[]string{"Alice", "marco", "Diego"} 
+    sort.Strings(names) 
+    fmt.Println(names) 
+    fmt.Println(sort.SearchStrings(nomes,"Alice"))
 
-	fmt.Print("Digite o nome de usuário: ") 
+	x <5
 
-	fmt.Scanln(&username) 
+	for i :=0; i <len(names); i++{
+		fmt.Println(names[i])
+	}
 
-  
+	for index, value := range names {
+		fmt.Println("O Indice é", index, "e o valor", Value)
+	
+	}
 
-	// Solicitar a senha 
-
-	var password string 
-
-	fmt.Print("Digite a senha: ") 
-
-	fmt.Scanln(&password) 
-
-  
-
-	// Verificar se o usuário e senha estão corretos 
-
-	if username == "admin" && password == "1234" { 
-
-		fmt.Println("Login bem-sucedido!") 
-
-	} else { 
-
-		fmt.Println("Usuário ou senha incorretos.") 
-
-}
-
-
+		for index, Value := range ages {
+			fmt.Println("O Indice é", index, "é o valor", Value)
+		}
