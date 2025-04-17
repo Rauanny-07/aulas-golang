@@ -1,31 +1,21 @@
 package main
 
-import (
-	"fmt"
+import ("fmt")
 
-)
+func main()
 
-func dadosPessoais(idade int, nome string) (int, string){
-
-  if idade >= 18 {
-    return idade, "maior de idade"
-} else {
-     return idade,"menor de idade"
-}
-   
-  }
-
-  func main(){
-
-    var idade int
-    var nome string
-
-  fmt.Println("Seu nome é:")
-   fmt.Scan(&nome)
-   fmt.Println("Sua idade é")
-   fmt.Scan(&idade)
-    
-  var nomep, idadep = dadosPessoais(idade, nome)
-fmt.Println(nomep)
-fmt.Println(idadep)
+alunoIdade := make(map[string]int)
+alunoIdade ["Bruno"] =15
+alunoIdade ["Otavio"] = 16
+alunoIdade ["Fabio"] = 40
+alunoIdade ["Isabela"] = 15
+fmt.Println("idade do bruno", alunoIdade["Bruno"])
+notasAluno := map [string]float64{
+    "Bruno" := 10;
+    "Otavio" := 10;
+    "Fabio" := 8.7;
+    "Isabela" := 9.5;
+   for nome, nota := range notasAluno{
+    fmt.Println("%s tirou a nota %.1f \n", k, v)
+   }
 }
