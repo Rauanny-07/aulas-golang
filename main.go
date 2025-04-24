@@ -1,21 +1,21 @@
 package main
 
-import ("fmt")
-
-func AnalizarNotas(nota1, nota2 float64) (float64, string){
-    media := (nota1 + nota2) / 2
-    var resultado string
-
-    if media >= 6 {
-        resultado = "aprovado"
-    }else{
-        resultado = "reprovado"
-    }
-      return media, resultado
-}
+import "fmt"
 
 func main(){
-  media, resultado := AnalizarNotas (7.5, 5.5)
-    fmt.Println("media", media)
-    fmt.Println("resultado", resultado)
+  capitais := map[string]string{
+      "sp" : "São Paulo",
+      "RJ" :"Rio de Janeiro",
+      "ES" : "Espirito Santo",
+}
+
+capitais["BH"] = "Belo Horizonte"
+
+for k,v := range capitais {
+    fmt.Println("Sigla, Nome", k, v)
+}
+delete(capitais, "AC")
+for k,v := range capitais {
+    fmt.Println("Sigla, Nome", k, v)
+}
 }
